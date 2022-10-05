@@ -1,0 +1,143 @@
+<html>
+  <head>
+   <meta name="color-scheme" content="light dark">
+  </head>
+  <body cz-shortcut-listen="true">
+    <pre style="word-wrap: break-word; white-space: pre-wrap;">
+      :root {
+        --table-width: 40%;
+        --backgroundColor: #101619;
+        --titles: #3c879c;
+        --text: #c5c7c8;
+        --text-table: #777;
+        --text-table-hover: white;
+        --table-titles: #BA9C41;
+        --table-titles-hover: #ffc107;
+        --backgroundTableOdd: #101619;
+        --backgroundTableEven: #0D1214;
+        --backgroundTableOdd-hover: #171F24;
+        --backgroundTableEven-hover: #0A0E0F;
+        --links: #3c879c;
+        --links-hover: #5ff5ff;
+      }
+      * {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      body {
+        background-color: var(--backgroundColor);
+      }
+
+      h3 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
+        margin-bottom: 50px;
+        text-align: center;
+        font-family: "Lato";
+        color: var(--titles);
+      }
+
+      p {
+        max-width: 500pt;
+        font-family: "Lato";
+        color: var(--text);
+      }
+
+      a {
+        max-width: 500pt;
+        font-family: "Lato";
+        color: var(--links);
+      }
+
+      a:hover {
+        color: var(--links-hover);
+      }
+
+      ul:has(ul) {
+        display: block;
+        max-width: 666.66px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      a~ul {
+        margin-left: 1px;
+        padding-left: 20px;
+        border-left: 2px solid rgba(0, 0, 0, .3);
+      }
+
+      li {
+        left: 0;
+        list-style: square;
+        list-style-position: inside;
+      }
+
+      table {
+        border: none;
+        border-collapse: collapse;
+        margin-bottom: 20pt;
+        display: table;
+        border-collapse: collapse;
+        border-spacing: 0;
+        box-sizing: border-box;
+        text-indent: initial;
+        width: var(--table-width);
+      }
+
+      table tbody tr:nth-of-type(odd) {
+        background-color: var(--backgroundTableOdd);
+      }
+
+      table tbody tr:nth-of-type(odd):hover {
+        background-color: var(--backgroundTableOdd-hover);
+      }
+
+      table tbody tr:nth-of-type(even) {
+        background-color: var(--backgroundTableEven);
+      }
+
+      table tbody tr:nth-of-type(even):hover {
+        background-color: var(--backgroundTableEven-hover);
+      }
+
+      tr,
+      td,
+      th {
+        border: none;
+        text-align: left;
+        font-family: "Lato";
+        padding: 8pt 40pt 8pt 40pt;
+      }
+
+      tr:hover>td {
+        color: var(--text-table-hover);
+      }
+
+      td {
+        color: var(--text-table);
+        font-size: 1.1em;
+      }
+
+      th {
+        color: var(--table-titles);
+        font-size: 1.2em;
+      }
+
+      th:hover {
+        color: var(--table-titles-hover);
+      }
+
+      .pad-cell {
+        max-width: 50pt;
+      }
+
+      .blank-row {
+        border: 0;
+        height: 15pt;
+      }
+    </pre>
+  </body>
+</html>
