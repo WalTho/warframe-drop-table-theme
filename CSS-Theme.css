@@ -1,30 +1,5 @@
-/*
-Apply a cool theme to the official Warframe PC Drop Table in 4 easy steps !
-
- 1. Go to : https://n8k6e2y6.ssl.hwcdn.net/repos/hnfvc0o3jnfvc873njb03enrf56.html (official Warframe PC Drop Table Updated - cf: https://forums.warframe.com/topic/809777-warframe-drop-rates-data/) 
- 2. CTRL + S to download the page
- 3. Open it with a text editor
- 4. Replace everything between the style tags by the code below instead, Enjoy ;) 
-
-  EDIT: to keep the theme working when clicking on the links of the Table of Contents, 
-        remove the links in the code but leave the "#something", 
-
-        for example :  
-          <a href="https://n8k6e2y6.ssl.hwcdn.net/repos/hnfvc0o3jnfvc873njb03enrf56.html#arbitrations">Arbitrations</a> 
-
-        would be : 
-          <a href="#arbitrations">Arbitrations</a>
-
-     -> Of course this list won't be updated automagically since you downloaded it, 
-        but you can redo the steps above to update it if needed.
-
-Be free to use or modify this theme at will ;)
-*/
-<style>
   :root {
-    /* Change theme here */
     --table-width: 40%;
-    /* I don't recommend to go below 25-30% but you can go up to 100% */
     --backgroundColor: #101619;
     --titles: #3c879c;
     --text: #c5c7c8;
@@ -39,8 +14,6 @@ Be free to use or modify this theme at will ;)
     --links: #3c879c;
     --links-hover: #5ff5ff;
   }
-
-  /* End of changes */
   * {
     margin-left: auto;
     margin-right: auto;
@@ -159,4 +132,3 @@ Be free to use or modify this theme at will ;)
     border: 0;
     height: 15pt;
   }
-</style>
